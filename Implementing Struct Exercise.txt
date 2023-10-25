@@ -1,0 +1,25 @@
+struct User {
+let firstName: String
+let lastName: String
+}
+struct Photo {
+var likesNumber : Int
+var commentsNumber: Int
+let yearCreated: Int
+let monthCreated: Int
+let dayCreated: Int
+let userFirstName: User.firstName
+let userLastName: User.lastName
+}
+
+var photoOne = Photo()
+photoOne.LikesNumber = 120
+photoOne.commentsNumber = 120
+photoOne.yearCreated = 2000
+photoOne.monthCreated = 7
+photoOne.dayCreated = 25
+photoOne.userFirstName = "Ahmed"
+photoOne.userLastName = "Hamed"
+
+
+

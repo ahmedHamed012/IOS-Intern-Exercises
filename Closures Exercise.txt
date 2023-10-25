@@ -1,0 +1,13 @@
+var arr = [1,4,6,3,8,5,7]
+func getFilterdArr(_ nums:[Int],closure:(_ element:Int)->Bool)->[Int] {
+    var evenArr:[Int] = []
+    for i in nums {
+        if closure(i){
+            evenArr.append(i)
+        }
+    }
+    return evenArr
+}
+print(getFilterdArr(arr, closure: { element in
+    return element%2==0
+}))
